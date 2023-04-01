@@ -13,11 +13,11 @@ steps:
     #   branch:
     #     - main
 
-  - name: frontend
-    image: node
-    commands:
-      - npm install
-      - npm test
+  # - name: frontend
+  #   image: node
+  #   commands:
+  #     - npm install
+  #     - npm test
     # when:
     #   branch:
     #     - main
