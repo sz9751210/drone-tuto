@@ -1,9 +1,9 @@
----
 kind: pipeline
-name: testing
+type: docker
+name: backend
 
 steps:
-- name: backend
-  image: busybox
+- name: practice
+  image: golang
   commands:
-    - cat README.md
+    - echo hello drone
