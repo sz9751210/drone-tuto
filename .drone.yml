@@ -4,6 +4,6 @@ name: testing
 
 steps:
 - name: backend
-  image: golang:1.15
+  image: busybox
   commands:
-    - go run main.go
+    - cat README.md
