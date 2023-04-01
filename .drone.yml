@@ -18,9 +18,9 @@ steps:
     commands:
       - npm install
       - npm test
-    when:
-      branch:
-        - main
+    # when:
+    #   branch:
+    #     - main
 
   # - name: publish
   #   image: plugins/docker
