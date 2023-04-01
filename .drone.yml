@@ -9,9 +9,9 @@ steps:
     commands:
       - go build
       - go test
-    when:
-      branch:
-        - main
+    # when:
+    #   branch:
+    #     - main
 
   - name: frontend
     image: node
