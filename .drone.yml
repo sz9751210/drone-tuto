@@ -1,34 +1,10 @@
 ---
 kind: pipeline
-type: docker
-name: default
+name: testing
 
 steps:
-  - name: backend
-    image: golang
-    commands:
-      - go build
-      - go test
-    # when:
-    #   branch:
-    #     - main
-
-  # - name: frontend
-  #   image: node
-  #   commands:
-  #     - npm install
-  #     - npm test
-    # when:
-    #   branch:
-    #     - main
-
-  # - name: publish
-  #   image: plugins/docker
-  #   settings:
-  #     repo: whchi/drone-example
-  #     registry: index.docker.io
-
-  - name: try
-    image: busybox
-    commands:
-      - cat README.md
+- name: backend
+  image: golang:1.15
+  commands:
+    - go build
+    - go test
